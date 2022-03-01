@@ -10,7 +10,7 @@ public class WeaponSystemView : MonoBehaviour
     public Sprite PrimaryWeaponSecondSprite;
     public TextMeshProUGUI PrimaryyWeaponSecondAmmo;
 
-    public void WeaponStatusUI(WeaponSystemController weaponSelect)
+    public void WeaponStatus(WeaponSystemController weaponSelect)
     {
         if (weaponSelect.wsModel.WeaponSlotType == WeaponSlotType.SecondaryWeapon)
         {
@@ -26,7 +26,7 @@ public class WeaponSystemView : MonoBehaviour
         }
     }
 
-    public void AmmoStatusUI(WeaponSystemController weaponSelect)
+    private void AmmoStatus(WeaponSystemController weaponSelect)
     {
         if(weaponSelect.wsModel.WeaponSlotType == WeaponSlotType.SecondaryWeapon)
         {
